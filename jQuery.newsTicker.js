@@ -12,7 +12,7 @@
     
     setInterval(function(){
       return $this.children('li:first').delay(settings.delayTime).animate({
-        marginTop:'-' + $(this).css('height'),
+        marginTop:'-' + $this.children('li:first').css('height'),
         opacity:'hide'
         },settings.scrollSpeed,settings.easingType,function(){
           $this.children('li:first').appendTo($this).css('margin-top','0px').fadeIn(500);
