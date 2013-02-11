@@ -17,6 +17,6 @@
         },settings.scrollSpeed,settings.easingType,function(){
           $this.children('li:first').appendTo($this).css('margin-top','0px').fadeIn(500);
         });
-    },settings.scrollInterval)
+    },settings.scrollInterval);
   }
 })(jQuery);
